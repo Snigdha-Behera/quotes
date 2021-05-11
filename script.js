@@ -49,7 +49,8 @@ async function getQuote() {
       const response = await fetch(apiUrl);
       apiQuotes = await response.json();
       newQuote();
-    } 
+    } catch (error){
+      console.log('oops');
 }
     
 // twitter function
